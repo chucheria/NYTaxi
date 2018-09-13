@@ -1,0 +1,8 @@
+brew services start postgresql
+createdb nyc-taxi
+initdb /usr/local/var/postgres
+psql -U postgres <- init console
+psql nyc-taxi Beardicion
+\du <- show users;
+\l <- show databases;
+\c "nyc-taxi"
